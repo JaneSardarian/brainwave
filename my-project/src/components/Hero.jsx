@@ -7,6 +7,7 @@ import { BackgroundCircles, BottomLine, Gradient } from './design/Hero.jsx'
 import { heroIcons } from '../constants/index.js'
 import Generating from './Generating.jsx'
 import Notification from './Notification.jsx'
+import CompanyLogos from './CompanyLogos.jsx'
 
 const Hero = () => {
   const parallaxRef = useRef(null)
@@ -20,7 +21,7 @@ const Hero = () => {
     >
       <div className='container relative' ref={parallaxRef}>
         <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]'>
-          <h1 className='h1 mb-6'>
+          <h1 className='h1 mt-[7rem] mb-6'>
             Explore the Possibilities {<br />} of AI Chatting with{' '}
             <span className='inline-block relative'>
               Brainwave
@@ -86,6 +87,7 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
+        <CompanyLogos className='hidden relative z-10 mt-20 lg:block' />
       </div>
 
       <BottomLine />
